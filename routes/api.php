@@ -35,7 +35,6 @@ Route::get('productUserget', [ProductController::class, 'index']);
 Route::get('brandUser', [KategoriController::class, 'getuser']);
 Route::get('productUser', [ProductController::class, 'getProductuser']);
 Route::get('productDetailget/{id}', [ProductController::class, 'show']);
-Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'userLogin']);
 Route::get('/auth', [AuthController::class, 'index'])->name('login');
 Route::post('/post', [ProductController::class, 'post']);
